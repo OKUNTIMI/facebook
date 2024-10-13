@@ -1,5 +1,5 @@
 import "./Homescreen.css"
-import { useNavigate } from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 
 const content=[
     {
@@ -29,9 +29,27 @@ const content=[
 
 function Homescreen(){
     const navigate=useNavigate()
-    const clickfriends=()=>{
-        navigate("/friends",{})
+    const clickHomescreen=()=>{
+        navigate("/",{})
     }
+    const clickFriend=()=>{
+        navigate("/Friend",{})
+    }
+    const clickChat=()=>{
+        navigate("/Chat",{})
+    }
+    
+    const clickNotification=()=>{
+        navigate("/Notification",{})
+    }
+    const clickVideo=()=>{
+        navigate("/Video",{})
+    }
+    const clickMarket=()=>{
+        navigate("/Market",{})
+    }
+    
+    
 
     return(
     <div className="Homescreen">
@@ -45,12 +63,12 @@ function Homescreen(){
         </header>
         <div className="homeicon">
             <ul>
-                <li><a href="/">1</a></li>
-                <li onClick={clickfriends}>2</li>
-                <li><a href="./chats">3</a></li>
-                <li><a href="./notifications">4</a></li>
-                <li><a href="./video">5</a></li>
-                <li><a href="./market">6</a></li>
+                <div onClick={clickHomescreen}>home </div>
+                <div onClick={clickFriend}>Friends</div>
+                <div onClick={clickChat}>chats</div>
+                <div onClick={clickNotification}>Notification</div>
+                <div onClick={clickVideo}>Videos</div>
+                <div onClick={clickMarket}>Market</div>
             </ul>
         </div>
         <div className="homeprofileaccess">
