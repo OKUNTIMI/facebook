@@ -1,5 +1,5 @@
 body{
-    background-color: aqua
+    background-color: white;
 
 }
 ul{
@@ -58,10 +58,10 @@ ul{
 }
 .fRusers{
     display: flex;
-    background-color: black;
+    background-color:white;
 }
 .friendRequest .fRusers .action{
-    background-color: bisque;
+    background-color:white;
 }
 .friendRequest .fRusers .action div{
     display: flex;
@@ -71,7 +71,8 @@ ul{
     margin: 0px;
     font-weight:600;
     text-align: center;
-    background-color: aquamarine;
+    color: white;
+    background-color:rgb(46, 46, 234);
     margin-left: 7px;
     margin-right: 7px;
     padding: 3px;
@@ -111,10 +112,10 @@ ul{
 }
 .pymkusers{
     display: flex;
-    background-color: black;
+    background-color:white;
 }
 .pymk .pymkusers .action{
-    background-color: bisque;
+    background-color: white;
 }
 .pymk .pymkusers .action div{
     display: flex;
@@ -124,7 +125,8 @@ ul{
     margin: 0px;
     font-weight:600;
     text-align: center;
-    background-color: aquamarine;
+    color: white;
+    background-color:rgb(46, 46, 234);
     margin-left: 7px;
     margin-right: 7px;
     padding: 3px;

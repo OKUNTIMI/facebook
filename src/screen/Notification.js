@@ -22,15 +22,71 @@ function Notification(){
         navigate("/Market",{})
     }
 
+    const Notification=[
+        {
+            img:"",
+            name:"Tunde Glory",
+            info:"Request you join wenddy group",
+            icon:<span class="material-symbols-outlined">more_horiz</span>,
+        },
+        {
+            img:"",
+            name:"Globy Tee",
+            info:"Highlighted a post from you too see",
+            icon:<span class="material-symbols-outlined">more_horiz</span>,
+        },
+        {
+            img:"",
+            name:"Eric Adewale",
+            info:"mention you in a commemt section",
+            icon:<span class="material-symbols-outlined">more_horiz</span>,
+        },
+        {
+            img:"",
+            name:"Osas Obi",
+            info:"Tag you in a post",
+            icon:<span class="material-symbols-outlined">more_horiz</span>,
+        },
+        {
+            img:"",
+            name:"Howard blutin",
+            info:"Mentioned you in a comment section",
+            icon:<span class="material-symbols-outlined">more_horiz</span>,
+        },
+        {
+            img:"",
+            name:"okunola David",
+            info:"Post on your timeline",
+            icon:<span class="material-symbols-outlined">more_horiz</span>,
+        },
+        {
+            img:"",
+            name:"",
+            info:"",
+            icon:<span class="material-symbols-outlined">more_horiz</span>,
+        },
+    ]
     return(
         <div className="Notification">
             <ul>
-                <div onClick={clickHomescreen}>home </div>
-                <div onClick={clickFriend}>Friends</div>
-                <div onClick={clickChat}>chats</div>
-                <div onClick={clickNotification}>Notifications</div>
-                <div onClick={clickVideo}>Videos</div>
-                <div onClick={clickMarket}>Market</div>
+                <div onClick={clickHomescreen}><span class="material-symbols-outlined">
+home
+</span></div>
+                <div onClick={clickFriend}><span class="material-symbols-outlined">
+group
+</span></div>
+                <div onClick={clickChat}><span class="material-symbols-outlined">
+chat
+</span></div>
+                <div onClick={clickNotification}><span class="material-symbols-outlined">
+notifications
+</span></div>
+                <div onClick={clickVideo}><span class="material-symbols-outlined">
+smart_display
+</span></div>
+                <div onClick={clickMarket}><span class="material-symbols-outlined">
+store
+</span></div>
             </ul>
             <div className="Ntop">
                 <p>Notifications</p>

@@ -26,85 +26,97 @@ function Chat(){
     const active=[
         {
             profile:"",
-            name:"",
+            name:"Yetunde ",
         },
         {
             profile:"",
-            name:"",
+            name:"Ayomide",
         },
         {
             profile:"",
-            name:"",
+            name:"Malik",
         },
         {
             profile:"",
-            name:"",
+            name:"Nifemi",
         },
         {
             profile:"",
-            name:"",
+            name:"Miracle",
         },
         {
             profile:"",
-            name:"",
+            name:"Eric",
         },
         {
             profile:"",
-            name:"",
+            name:"Moses",
         }
     ]
 
     const message=[
         {
             profile:"",
-            name:"",
-            text:"",
+            name:"Yetunde Liasa",
+            text:"baby why are you doing this to ma nah",
         },
         {
             profile:"",
-            name:"",
-            text:"",
+            name:"Eric Adefolakanmi",
+            text:"Bro you sabi that girl?",
         },
         {
             profile:"",
-            name:"",
-            text:"",
+            name:"Moses Deroid",
+            text:"Brother David the said I should tell you something.",
         },
         {
             profile:"",
-            name:"",
-            text:"",
+            name:"Malik Ahmad",
+            text:"bro hwfar send me code",
         },
         {
             profile:"",
-            name:"",
-            text:"",
+            name:"Bola made",
+            text:" omo e get one babe wey i been see today",
         },
         {
             profile:"",
-            name:"",
-            text:"",
+            name:"Tola finde",
+            text:"longest time bro",
         },
         {
             profile:"",
-            name:"",
-            text:"",
+            name:"Amaka Glory",
+            text:"hey baby boy how have you been ",
         },
         {
             profile:"",
-            name:"",
-            text:"",
+            name:"Babatunde sherif",
+            text:"Sir the good are ready when should we transport dem",
         }
     ]
     return(
         <div className="chat">
             <ul>
-                <div onClick={clickHomescreen}>home </div>
-                <div onClick={clickFriend}>Friends</div>
-                <div onClick={clickChat}>chats</div>
-                <div onClick={clickNotification}>Notifications</div>
-                <div onClick={clickVideo}>Videos</div>
-                <div onClick={clickMarket}>Market</div>
+                <div onClick={clickHomescreen}><span class="material-symbols-outlined">
+home
+</span></div>
+                <div onClick={clickFriend}><span class="material-symbols-outlined">
+group
+</span></div>
+                <div onClick={clickChat}><span class="material-symbols-outlined">
+chat
+</span></div>
+                <div onClick={clickNotification}><span class="material-symbols-outlined">
+notifications
+</span></div>
+                <div onClick={clickVideo}><span class="material-symbols-outlined">
+smart_display
+</span></div>
+                <div onClick={clickMarket}><span class="material-symbols-outlined">
+store
+</span></div>
             </ul>
             <div className="active">
                 <div className="top">
@@ -114,20 +126,27 @@ function Chat(){
                         <div></div>
                     </div>
                 </div>
-                <div className='profile'>
-                    <div></div>
-                    <p>tunde</p>
+                <div className="PH">
+                {active.map((item,index)=>(
+                    <div key={index} className='profile'>
+                        <div></div>
+                        <p>{item.name}</p>
+               </div> 
+                ))}
                 </div>
             </div>
             <div className="messages">
-                <div className="message-holder">
+                {message.map((item,index)=>(
+                <div key={index} className="message-holder">
                     <div className="message-profile-pic"></div>
                     <div className="message-content">
-                        <h3>Okunola Timilehin</h3>
-                        <h4>hey it been a little while bro</h4>
+                        <h3>{item.name}</h3>
+                        <h4>{item.text}</h4>
                     </div>
                 </div>
+                ))}
             </div>
+            <div className="Add-Chat">+</div>
         </div>
     );
 }

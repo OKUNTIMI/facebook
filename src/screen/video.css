@@ -1,0 +1,110 @@
+.Video{
+    background-color: bisque;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0px;
+    padding: 10px;
+}
+.Vtop{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.Vtop p{
+    margin: 0px;
+    font-size:25px;
+    font-weight: 700;
+}
+.Vtop .Icon{
+    display: flex;
+}
+.Vtop .Icon div{
+    height: 30px;
+    margin-left: 10px;
+    width: 30px;
+    background-color: black;
+}
+.Vcontent{
+    width: 100vwv;
+    margin-top: 3px;
+    background-color: blueviolet;
+}
+.Vcontent .Vtopholder{
+    height: 50px;
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    padding: 5px;
+}
+.Vcontent .Vtopholder img{
+    height:50px ;
+    width: 50px;
+    background-color: violet;
+    border-radius: 100%;
+}
+.Vcontent .Vtopholder p{
+    height: 40px;
+    width: 70%;
+    font-size: 20px;
+    margin-top: 5px;
+    font-weight: 700;
+    color: white;
+    background-color: aqua;
+}
+.Vcontent .Vtopholder icon1{
+    height: 20px;
+    width: 30px;
+    margin-left: 4px;
+    margin-top: 5px;
+    background-color: black;
+}
+.Vcontent .Vtopholder icon2{
+    height: 20px;
+    width: 30px;
+    margin-left: 4px;
+    margin-top: 5px;
+    background-color: black;
+}
+.Vcontent .caption{
+    max-height:350px;
+    max-width: 400vw;
+    word-wrap:normal;
+}
+.Vcontent .caption p{
+    font-size: 18px;
+    padding:2px;
+    margin: 0px;
+}
+.content video{
+    background-color: black;
+    height:310px ;
+    width: 100vw;
+}
+.Vcontent .Vreact {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Vcontent .Vreact icon3{
+    height: 40px;
+    border-radius: 20px;
+    width: 31%;
+    background-color: grey;
+}
+.Vcontent .Vreact icon4{
+    height: 40px;
+    border-radius: 20px;
+    width: 31%;
+    background-color: grey;
+}
+.Vcontent .Vreact icon5{
+    height: 40px;;
+    border-radius: 20px;
+    width: 31%;
+    background-color: grey;
+}

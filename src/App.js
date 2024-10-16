@@ -4,6 +4,7 @@ import './App.css';
 import Friend from './screen/Friend';
 import Chat from './screen/Chat';
 import Notification from './screen/Notification';
+import Video from './screen/Video';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Route path="/Friend" element={<Friend/>}/>
           <Route path="/Chat" element={<Chat/>}/>
           <Route path="/Notification" element={<Notification/>}/>
+          <Route path="/Video" element={<Video/>}/>
         </Routes>
       </Router>
     </div>
